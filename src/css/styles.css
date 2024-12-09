@@ -1,0 +1,114 @@
+@import url('./reset.css');
+@import url('simplelightbox/dist/simple-lightbox.min.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 24px 156px 24px 156px;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 90px) / 3);
+  transition: transform 250ms linear;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.1);
+}
+
+.sl-overlay {
+  background-color: rgba(46, 47, 66, 0.8);
+}
+
+.sl-close.sl-close {
+  color: #fff;
+}
+
+.sl-wrapper .sl-navigation.sl-navigation button {
+  color: #fff;
+}
+
+.feedback-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border-width: 1px;
+  display: block;
+  border-color: grey;
+  max-width: 100%;
+}
+
+input:hover {
+  border-color: black;
+}
+
+form button[type='submit'] {
+  cursor: pointer;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  align-self: flex-start;
+}
+
+form button[type='submit']:hover {
+  background-color: #6c8cff;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.feedback-form label input,
+.feedback-form label textarea {
+  box-sizing: border-box;
+  display: block;
+  margin-top: 8px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-color: grey;
+  border-radius: 4px;
+  border-width: 1px;
+}
+
+.feedback-form label {
+  text-align: left;
+}
+
+.feedback-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
